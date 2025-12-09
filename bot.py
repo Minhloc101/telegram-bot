@@ -61,12 +61,13 @@ SUPER_ADMINS = [7839568848]   # sửa lại khi biết ID của bạn
 
 # MySQL XAMPP
 DB_CONFIG = {
-    "host": "127.0.0.1",
-    "user": "root",
-    "password": "",
-    "database": "shop_bot",
+    "host": "localhost",
+    "user": "h50d75d929_shop_bot",
+    "password": "ErBQbFkYeyfle6xNpFje",
+    "database": "h50d75d929_shop_bot",
     "charset": "utf8mb4",
 }
+
 
 # TODO: 3 — VietQR info (ưu tiên set bằng biến môi trường khi deploy thật)
 VIETQR_ACCOUNT_NAME = "TRUONG MINH LOC"
@@ -799,6 +800,7 @@ if __name__ == "__main__":
     threading.Thread(target=poll_autobank_loop, daemon=True).start()
 
     run_bot()
+
 
 
 
